@@ -8,6 +8,7 @@ package bab5soal2;
  *
  * @author ACER
  */
+import java.util.Scanner;
 public class Bab5soal2 {
 
     /**
@@ -15,10 +16,20 @@ public class Bab5soal2 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        double alas= 17;
-        double tinggi= 11;
-        double luas= (alas*tinggi)/2;
-        System.out.println("93,5");
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println("### Operator Mencari Luas Segitiga ###");
+        System.out.println("Masukan nilai alas :");
+        double alas = scanner.nextDouble();
+        System.out.println("Masukan nilai tinggi : ");
+        double tinggi = scanner.nextDouble();
+        
+        double luas = (alas * tinggi)/2;
+        
+        System.out.println("Luas Segitiga : " + luas);
+        
+        // Menutup scanner
+        scanner.close();
     }
     
 }

@@ -15,13 +15,10 @@ public class Bab6soal1 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        int nilai=85;
-        if (nilai<90) {
-         System.out.println("grade A");
-        }
-        else if(nilai>=90 && nilai<100) {
-            System.out.println("grade B");
-        }
+        int nilai= 85;
+      System.out.println("grade A");
+      System.out.println("grade B");
+      System.out.println("grade c");
     }
     
 }

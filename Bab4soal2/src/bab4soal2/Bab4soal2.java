@@ -17,8 +17,13 @@ public class Bab4soal2 {
         // TODO code application logic here
         int x = 6; 
         int w = 5;
-        int y = 8-x++;
-        int z = 8-++w;
+        int y = 8 - x++;
+        int z = 8 - ++w;
+        
+        System.out.println(x);
+        System.out.println(w);
+        System.out.println(y);
+        System.out.println(z);
     }
     
 }
