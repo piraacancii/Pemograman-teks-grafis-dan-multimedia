@@ -15,6 +15,12 @@ public class Bab13soal2 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        // Membuat objek Segitiga dengan alas dan tinggi
+        Segitiga segitiga = new Segitiga(10, 5);
+
+        // Menampilkan hasil perhitungan
+        System.out.println("Alas: " + segitiga.getAlas());
+        System.out.println("Tinggi: " + segitiga.getTinggi());
+        System.out.println("Luas: " + segitiga.getLuas());
     }
-    
 }

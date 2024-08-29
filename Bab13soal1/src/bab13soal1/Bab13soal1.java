@@ -14,36 +14,14 @@ public class Bab13soal1 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-         // Kelas CalculatorSederhana sebagai kelas bersarang statis
-    static class CalculatorSederhana {
-        // Metode untuk penambahan dengan dua parameter
-        int tambah(int a, int b) {
-            return a + b;
-        }
+         // Membuat objek CalculatorSederhana
+        CalculatorSederhana objek = new CalculatorSederhana();
 
-        // Metode untuk penambahan dengan tiga parameter
-        int tambah(int a, int b, int c) {
-            return a + b + c;
-        }
-
-        // Metode untuk pengurangan dengan dua parameter
-        int pengurangan(int a, int b) {
-            return a - b;
-        }
-
-        // Metode untuk perkalian dengan dua parameter
-        int perkalian(int a, int b) {
-            return a * b;
-        }
-        
-        // Metode untuk pembagian dengan dua parameter
-        double pembagian(int a, int b) {
-            if (b != 0) {
-                return (double) a / b;
-            } else {
-                System.out.println("Pembagian dengan nol tidak diperbolehkan.");
-                return Double.NaN; // Menandakan hasil tidak valid
-            }
-        }
+        // Menampilkan hasil operasi
+        System.out.println("Hasil Pertambahan : " + objek.tambah(10, 20));
+        System.out.println("Hasil Pertambahan (3 angka) : " + objek.tambah(10, 20, 30));
+        System.out.println("Hasil Pengurangan : " + objek.pengurangan(20, 10));
+        System.out.println("Hasil Perkalian : " + objek.perkalian(20, 10));
+        System.out.println("Hasil Pembagian : " + objek.pembagian(20, 10));
     }
+}
