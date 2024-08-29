@@ -24,8 +24,8 @@ public class Bab15soal2 {
             System.out.println(e.getMessage());
         } 
         int hasil = kalkulator.pengurangan(10, 5);
-        System.out.println("Hasil Pengurangan: " + hasil);
-        
-    }
+        System.out.println("Hasil Pengurangan: " + hasil);   
+       }
+       
 }
 
